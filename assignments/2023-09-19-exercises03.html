@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>2023-09-19-exercises03 - MTH436</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/my.css">
+<link rel="stylesheet" href="../css/syntax.css">
+  <link rel="alternate" type="application/atom+xml" title="MTH 436" href="../atom.xml" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+  <div class="navbar">
+
+    <header>
+      <hgroup>
+        <h1><a href="../index.html" id="titlelink">Introduction to Knots and Braids (MTH 436)</a></h1>
+      </hgroup>
+    </header>
+
+    <nav id="mainnav">
+      <div id="topmenu">
+        <menu>
+          <a href="../index.html">Course information</a>
+	  
+          <a href="../assignments.html">Exercise sheets</a>
+	  
+	  
+        </menu>
+	</div>
+    </nav>
+    </div>
+    <section id="pagecontent">
+        <article>
+    <section class="header">
+        <h1>Exercise sheet 3</h1>
+    </section>
+    <section>
+      <p>
+	
+	<a href="../assignments/2023-09-01-exercises02.html" class="prev"><<</a>
+	
+	
+	<a href="../assignments/2023-09-26-exercises04.html" style="float:right" class="next">>></a>
+	
+      </p>
+<p class="date"><strong>&nbsp;Last modified: 03:32 PM - 20 September, 2023 </strong></p>
+	  
+	  <a href="../assignments/pdfs/2023-09-19-exercises03.pdf">PDF version</a>
+	  
+	  
+        <ol>
+<li><p>Consider a smooth frame <span class="math inline">\(s_1, s_2, \ldots, s_k\)</span> of a smooth vector bundle <span class="math inline">\(\pi : E \to B\)</span> over an open set <span class="math inline">\(U \subset B\)</span>. Prove that any other section <span class="math inline">\(s(p) = \lambda_1(p) s_1(p) + \cdots + \lambda_k(p) s_k(p)\)</span> over <span class="math inline">\(U\)</span> is a smooth vector field if and only if <span class="math inline">\(\lambda_i : U \to \mathbb{R}\)</span> are smooth functions.</p></li>
+<li><p>Consider a (not-necessarily smooth) section <span class="math inline">\(s : M \to T(M)\)</span> such that <span class="math inline">\(\pi \circ s = Id\)</span>, where <span class="math inline">\(T(M)\)</span> denotes the tangent bundle and <span class="math inline">\(\pi : T(M) \to M\)</span> the natural projection. Prove that the following are equivalent (and, therefore,they are all equivalent definitions of a smooth vector field):</p>
+<ol>
+<li><p><span class="math inline">\(s : M \to T(M)\)</span> is a smooth map (considering the manifold structure on <span class="math inline">\(T(M)\)</span>).</p></li>
+<li><p>Given a chart <span class="math inline">\(\phi : U \to \mathbb{R}^n\)</span>, let <span class="math inline">\(x_i\)</span> be the coordinate functions, i.e. <span class="math inline">\(\phi(p) = (x_1(p), x_2(p), \ldots, x_n(p))\)</span>. Consider the smooth (local) frame on <span class="math inline">\(U\)</span> given by <span class="math inline">\(\frac{\partial}{\partial y_i}\)</span>. Let <span class="math inline">\(\lambda_i : U \to \mathbb{R}\)</span> define smooth functions so that <span class="math inline">\(s(p) = \Sigma_i \lambda_i(p)\frac{\partial}{\partial y_i}\)</span>, then <span class="math inline">\(\lambda_i\)</span> are smooth.</p></li>
+<li><p>Since <span class="math inline">\(s(p)\)</span> is a tangent vector, it is a derivation. So given a smooth function <span class="math inline">\(f : M\to \mathbb{R}\)</span>, <span class="math inline">\(s(p)(f)\in \mathbb{R}\)</span>. Therefore, we get a map <span class="math inline">\(p \to s(p)(f)\)</span> which is smooth for every (global!) smooth function <span class="math inline">\(f : M \to \mathbb{R}\)</span> (Be careful, we are only considering global functions <span class="math inline">\(f\)</span>, not local ones).</p></li>
+</ol></li>
+<li><p>Prove that (global) vector fields on a smooth manifold form a vector space.</p></li>
+<li><p>Given a vector field <span class="math inline">\(p \to X_p\)</span> where <span class="math inline">\(X_p\)</span> may be regarded as a derivation on the germs of smooth functions at <span class="math inline">\(p\)</span>, let <span class="math inline">\(X(f) := X_p(f)\)</span>. Prove that <span class="math inline">\(X\)</span> is as a linear map <span class="math inline">\(X : C^\infty(M) \to C^\infty(M)\)</span> which satisfies Leibnitz’s rule, i.e. <span class="math inline">\(X(fg) = fX(g) + g X(f)\)</span>. Conversely, any linear map which satisfies Leibnitz rule is equal to <span class="math inline">\(X(f)\)</span>, for some vector field <span class="math inline">\(p \to X_p\)</span>.</p></li>
+<li><p>Given two vector fields <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, define the <em>Lie Bracket</em> of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> (denoted <span class="math inline">\([X,Y]\)</span>) as <span class="math inline">\([X, Y](f) := X(Y(f)) - Y (X (f))\)</span>.</p>
+<ol>
+<li><p>Prove that <span class="math inline">\([X,Y]\)</span> is vector field.</p></li>
+<li><p>Prove that the Lie Bracket satisfies these properties</p>
+<ol>
+<li><p><span class="math inline">\([X, Y + Z] = [X, Y] + [X, Z]\)</span> and <span class="math inline">\([X, \lambda Y] = \lambda [X, Y]\)</span> for any <span class="math inline">\(\lambda \in \mathbb{R}\)</span>.</p></li>
+<li><p><span class="math inline">\([X, Y] = -[Y, X]\)</span></p></li>
+<li><p><span class="math inline">\([X, [Y , Z]] + [Y, [Z , X]] + [Z, [X , Y]]\)</span>. This is called the <em>Jacobi identity</em>.</p></li>
+</ol></li>
+<li><p>Given a chart <span class="math inline">\(\phi : U \to \mathbb{R}^n\)</span>, with its coordinate functions <span class="math inline">\(x_i(p)\)</span> defined so that <span class="math inline">\(\phi(p) = (x_1(p), x_2(p), \ldots, x_n(p)\)</span>, prove that <span class="math inline">\([\frac{\partial}{\partial x_i}, \frac{\partial}{\partial x_j}]=0\)</span></p></li>
+<li><p>Derive a local expression for the Lie Bracket. In other words, given a chart <span class="math inline">\(\phi : U \to \mathbb{R}^n\)</span>, with its coordinate functions <span class="math inline">\(x_i(p)\)</span> defined so that <span class="math inline">\(\phi(p) = (x_1(p), x_2(p), \ldots, x_n(p)\)</span>, express the vector fields <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> in terms of the coordinate frame on <span class="math inline">\(U\)</span>, i.e. <span class="math inline">\(X_p = \Sigma_i a_i(p) \frac{\partial}{\partial x_i}\)</span> and <span class="math inline">\(Y_p = \Sigma_i b_i(p) \frac{\partial}{\partial x_i}\)</span>, then write an expression for <span class="math inline">\([X, Y]\)</span> in terms of <span class="math inline">\(a_i\)</span>, <span class="math inline">\(b_i\)</span>, and <span class="math inline">\(\frac{\partial}{\partial x_i}\)</span></p></li>
+</ol></li>
+</ol>
+    </section>
+</article>
+
+    </section>
+
+<section id="posts" class="sidenav">
+
+    <h2>Latest exercise sheet</h2>
+<ul>
+    
+        <li>
+          <a href="../assignments/2023-11-18-exercises07.html">Exercise sheet 7</a>
+	   /
+	  <a href="../assignments/pdfs/2023-11-18-exercises07.pdf">PDF version</a>
+	  
+	  
+        </li>
+    
+        <li>
+          <a href="../assignments/2023-11-02-exercises06.html">Exercise sheet 6</a>
+	   /
+	  <a href="../assignments/pdfs/2023-11-02-exercises06.pdf">PDF version</a>
+	  
+	  
+        </li>
+    
+</ul>
+
+    <p><a href="../assignments.html">All exercise sheets&hellip;</a></p>
+
+
+
+
+
+
+
+</section>
+</body>
+</html>

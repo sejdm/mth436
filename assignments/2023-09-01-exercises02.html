@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>2023-09-01-exercises02 - MTH436</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/my.css">
+<link rel="stylesheet" href="../css/syntax.css">
+  <link rel="alternate" type="application/atom+xml" title="MTH 436" href="../atom.xml" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+  <div class="navbar">
+
+    <header>
+      <hgroup>
+        <h1><a href="../index.html" id="titlelink">Introduction to Knots and Braids (MTH 436)</a></h1>
+      </hgroup>
+    </header>
+
+    <nav id="mainnav">
+      <div id="topmenu">
+        <menu>
+          <a href="../index.html">Course information</a>
+	  
+          <a href="../assignments.html">Exercise sheets</a>
+	  
+	  
+        </menu>
+	</div>
+    </nav>
+    </div>
+    <section id="pagecontent">
+        <article>
+    <section class="header">
+        <h1>Exercise sheet 2</h1>
+    </section>
+    <section>
+      <p>
+	
+	<a href="../assignments/2023-08-21-exercises01.html" class="prev"><<</a>
+	
+	
+	<a href="../assignments/2023-09-19-exercises03.html" style="float:right" class="next">>></a>
+	
+      </p>
+<p class="date"><strong>&nbsp;Last modified: 01:29 AM -  2 September, 2023 </strong></p>
+	  
+	  <a href="../assignments/pdfs/2023-09-01-exercises02.pdf">PDF version</a>
+	  
+	  
+        <h3 id="applications-of-the-inverse-function-theorem">Applications of the inverse function theorem</h3>
+<ol>
+<li><p>Consider a smooth map <span class="math inline">\(f : M \to N\)</span> where <span class="math inline">\(M\)</span> and <span class="math inline">\(N\)</span> are of the same dimension <span class="math inline">\(n\)</span>. Assume that <span class="math inline">\(d_p(f) : T_p(M) \to T_{f(p)}(N)\)</span> is invertible. Prove that there exists a chart <span class="math inline">\(\phi : U \to \mathbb{R}^n\)</span> centered at <span class="math inline">\(p\)</span> and a chart <span class="math inline">\(\psi : V \to \mathbb{R}^n\)</span> centered at <span class="math inline">\(f(p)\)</span> so that <span class="math inline">\(\psi \circ f \circ \phi^{-1} = Id\)</span>.</p></li>
+<li><p>Consider a map <span class="math inline">\(F : \mathbb{R}^n \to \mathbb{R}^k\)</span>, which is smooth and its Jacobian is of rank <span class="math inline">\(k\)</span> at <span class="math inline">\(0\)</span>.</p>
+<ol>
+<li><p>Prove that there exists a map <span class="math inline">\(\theta : \mathbb{R}^n \to \mathbb{R}^n\)</span> so that the first <span class="math inline">\(k\)</span> columns of <span class="math inline">\(Jac_0(F \circ \theta^{-1})\)</span> are linearly independent (A permutation would do!).</p></li>
+<li><p>Let <span class="math inline">\(f_i\)</span> be the coordinates of <span class="math inline">\(F\circ \theta^{-1}\)</span>, i.e.<br />
+<span class="math inline">\(F(\theta^{-1}((x_1, x_2, \ldots, x_n)) = (f_1(x_1, x_2, \ldots, x_n), f_2(x_1, x_2, \ldots, x_n), \ldots, f_k(x_1, x_2, \ldots, x_n))\)</span> Consider the map <span class="math inline">\(F : \mathbb{R}^n \to \mathbb{R}^k \times \mathbb{R}^{n-k}\)</span> defined by <span class="math inline">\(G(x_1, x_2, \ldots, x_n) = (f_1(x_1, \ldots, x_n), f_2(x_1, \ldots, x_n), \ldots, f_k(x_1, \ldots, x_n), x_{k+1}, \ldots, x_n)\)</span>. Prove that <span class="math inline">\(G\)</span> is a local diffeomorphism.</p></li>
+<li><p>Let <span class="math inline">\(\pi(x_1, x_2, \ldots, x_n) = (x_1, x_2, \ldots, x_k)\)</span>. Observe that <span class="math inline">\(F\circ \theta^{-1} = \pi \circ G\)</span>. Define <span class="math inline">\(\phi := G \circ \theta\)</span>. Prove that <span class="math inline">\(F \circ \phi^{-1} = \pi\)</span>.</p></li>
+</ol></li>
+<li><p>Use the previous exercise to prove the local submersion theorem.</p></li>
+<li><p>Use the submersion theorem to prove that the inverse image (under a smooth map between manifolds) of a regular value is always a manfold.</p></li>
+<li><p>Consider a map <span class="math inline">\(F : \mathbb{R}^k \to \mathbb{R}^n\)</span>, which is smooth and its Jacobian is of rank <span class="math inline">\(k\)</span> at <span class="math inline">\(0\)</span>.</p>
+<ol>
+<li><p>Prove that there exists a map <span class="math inline">\(\theta : \mathbb{R}^n \to \mathbb{R}^n\)</span> so that the first <span class="math inline">\(k\)</span> rows of <span class="math inline">\(Jac_0(\theta \circ F)\)</span> are linearly independent (A permutation would do!).</p></li>
+<li><p>Let <span class="math inline">\(f_i\)</span> be the coordinates of <span class="math inline">\(\theta \circ F\)</span>, i.e.<br />
+<span class="math inline">\(\theta(F(x_1, \ldots, x_k) = (f_1(x_1, \ldots, x_k), f_2(x_1, \ldots, x_k), \ldots, f_n(x_1, \ldots, x_k))\)</span> Consider the map <span class="math inline">\(F : \mathbb{R}^k \times \mathbb{R}^{n-k} \to \mathbb{R}^n\)</span> defined by <span class="math inline">\(G(x_1, \ldots, x_n) = (f_1(x_1, \ldots, x_k), f_2(x_1, \ldots, x_k), \ldots, f_n(x_1, \ldots, x_k))+(0, \ldots, 0, x_{k+1}, \ldots, x_n)\)</span>. Prove that <span class="math inline">\(G\)</span> is a local diffeomorphism when restricted to some neighbourhood <span class="math inline">\(U\)</span> of 0.</p></li>
+<li><p>Let <span class="math inline">\(i(x_1, x_2, \ldots, x_k) = (x_1, x_2, \ldots, x_k, 0, \ldots, 0)\)</span>. Observe that <span class="math inline">\(\theta \circ F = G \circ i\)</span>. Define <span class="math inline">\(\psi := G^{-1} \circ \theta\)</span>. Prove that <span class="math inline">\(\psi \circ F= i\)</span>.</p></li>
+</ol></li>
+<li><p>Use the previous exercise to prove the local immersion theorem.</p></li>
+<li><p>Use the immersion theorem to prove that that image of an injective immersion which is a homeomorphism onto its image is always a submanifold.</p></li>
+</ol>
+    </section>
+</article>
+
+    </section>
+
+<section id="posts" class="sidenav">
+
+    <h2>Latest exercise sheet</h2>
+<ul>
+    
+        <li>
+          <a href="../assignments/2023-11-18-exercises07.html">Exercise sheet 7</a>
+	   /
+	  <a href="../assignments/pdfs/2023-11-18-exercises07.pdf">PDF version</a>
+	  
+	  
+        </li>
+    
+        <li>
+          <a href="../assignments/2023-11-02-exercises06.html">Exercise sheet 6</a>
+	   /
+	  <a href="../assignments/pdfs/2023-11-02-exercises06.pdf">PDF version</a>
+	  
+	  
+        </li>
+    
+</ul>
+
+    <p><a href="../assignments.html">All exercise sheets&hellip;</a></p>
+
+
+
+
+
+
+
+</section>
+</body>
+</html>
